@@ -34,7 +34,8 @@ const shuffleDeck = () => {
 }
 
 const dealCard = () => {
-  document.querySelector('p').textContent = deck[0]
+  // document.querySelector('p').textContent = deck[0]
+  document.querySelector('p').textContent = deck.splice(deck.length - 1, 1)[0]
 }
 const makeAndShuffleDeck = () => {
   makeDeck()
